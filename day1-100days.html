@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day1-100Days|CSS 100 days</title>
+    <style>
+      body {
+        color: #fff;
+      }
+      .frame {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        margin-top: -200px;
+        margin-left: -200px;
+        height: 400px;
+        width: 400px;
+        background: #43389f;
+        background: -webkit-linear-gradient(
+          bottom left,
+          #43389f 0%,
+          #4ec6ca 100%
+        );
+        background: linear-gradient(to top right, #43389f 0%, #4ec6ca 100%);
+      }
+      .number {
+        position: relative;
+        height: 100px;
+        width: 200px;
+        .one-one {
+          position: absolute;
+          background: #fff;
+          box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 3px;
+          z-index: 1;
+          top: 0;
+          left: -15px;
+          height: 40px;
+          width: 20px;
+          transform: rotate(50deg);
+        }
+        .one-two {
+          top: 0px;
+          left: 0px;
+          position: relative;
+          height: 100px;
+          width: 24px;
+          background: #fff;
+          z-index: 10;
+          border: 3px;
+          box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+        }
+        .zero-one,
+        .zero-two {
+          position: absolute;
+          top: 0px;
+          left: 17px;
+          height: 100px;
+          width: 100px;
+          box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 50%;
+          box-sizing: border-box;
+          border: 24px solid #fff;
+          z-index: 8;
+        }
+        .zero-two {
+          left: 100px;
+          z-index: 6;
+        }
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .big {
+        display: block;
+        font-weight: 700;
+        font-size: 82px;
+        line-height: 60px;
+        text-transform: uppercase;
+        margin-top: 6px;
+      }
+      .small {
+        position: relative;
+        z-index: 20;
+        display: block;
+        font-size: 23px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="center">
+        <div class="number">
+          <div class="one-one"></div>
+          <div class="one-two"></div>
+          <div class="zero-one"></div>
+          <div class="zero-two"></div>
+        </div>
+        <span class="big">Days</span>
+        <span class="small">CSS Challenge</span>
+      </div>
+    </div>
+  </body>
+</html>
